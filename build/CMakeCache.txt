@@ -28,7 +28,7 @@ CMAKE_BUILD_TYPE:STRING=RelWithDebInfo
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/data/data/com.termux/files/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/data/data/com.termux/files/usr/bin/c++
 
 //LLVM archiver
 CMAKE_CXX_COMPILER_AR:FILEPATH=/data/data/com.termux/files/usr/bin/llvm-ar
@@ -55,7 +55,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/data/data/com.termux/files/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/data/data/com.termux/files/usr/bin/cc
 
 //LLVM archiver
 CMAKE_C_COMPILER_AR:FILEPATH=/data/data/com.termux/files/usr/bin/llvm-ar
@@ -150,7 +150,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Nregex
+CMAKE_PROJECT_NAME:STATIC=nregex
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/data/data/com.termux/files/usr/bin/llvm-ranlib
@@ -226,6 +226,15 @@ Nregex_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Nregex_SOURCE_DIR:STATIC=/data/data/com.termux/files/home/Nregex
 
+//Value Computed by CMake
+nregex_BINARY_DIR:STATIC=/data/data/com.termux/files/home/Nregex/build
+
+//Value Computed by CMake
+nregex_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+nregex_SOURCE_DIR:STATIC=/data/data/com.termux/files/home/Nregex
+
 
 ########################
 # INTERNAL cache entries
@@ -240,9 +249,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/data/data/com.termux/files/home/Nregex/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=29
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=30
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=6
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -347,7 +356,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/data/data/com.termux/files/usr/share/cmake-3.29
+CMAKE_ROOT:INTERNAL=/data/data/com.termux/files/usr/share/cmake-3.30
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG

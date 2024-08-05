@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/data/data/com.termux/files/home/Nregex/src/graph_node.cpp" "CMakeFiles/Nregex.dir/src/graph_node.cpp.o" "gcc" "CMakeFiles/Nregex.dir/src/graph_node.cpp.o.d"
   "/data/data/com.termux/files/home/Nregex/src/match.cpp" "CMakeFiles/Nregex.dir/src/match.cpp.o" "gcc" "CMakeFiles/Nregex.dir/src/match.cpp.o.d"
-  "/data/data/com.termux/files/home/Nregex/src/match_begin.cpp" "CMakeFiles/Nregex.dir/src/match_begin.cpp.o" "gcc" "CMakeFiles/Nregex.dir/src/match_begin.cpp.o.d"
-  "/data/data/com.termux/files/home/Nregex/src/match_here.cpp" "CMakeFiles/Nregex.dir/src/match_here.cpp.o" "gcc" "CMakeFiles/Nregex.dir/src/match_here.cpp.o.d"
+  "/data/data/com.termux/files/home/Nregex/src/regex.cpp" "CMakeFiles/Nregex.dir/src/regex.cpp.o" "gcc" "CMakeFiles/Nregex.dir/src/regex.cpp.o.d"
+  "/data/data/com.termux/files/home/Nregex/tests/nka.cpp" "CMakeFiles/Nregex.dir/tests/nka.cpp.o" "gcc" "CMakeFiles/Nregex.dir/tests/nka.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

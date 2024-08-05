@@ -1,1 +1,1 @@
-/data/data/com.termux/files/usr/bin/c++  -std=c++20 -Wall -O2 -g -DNDEBUG CMakeFiles/Nregex.dir/src/match.cpp.o CMakeFiles/Nregex.dir/src/match_begin.cpp.o CMakeFiles/Nregex.dir/src/match_here.cpp.o -o Nregex
+/data/data/com.termux/files/usr/bin/c++  -std=c++20 -Wall -O2 -g -DNDEBUG CMakeFiles/Nregex.dir/src/graph_node.cpp.o CMakeFiles/Nregex.dir/src/match.cpp.o CMakeFiles/Nregex.dir/src/regex.cpp.o CMakeFiles/Nregex.dir/tests/nka.cpp.o -o Nregex

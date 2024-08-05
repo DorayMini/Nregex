@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Nregex.dir/src/graph_node.cpp.o"
+  "CMakeFiles/Nregex.dir/src/graph_node.cpp.o.d"
   "CMakeFiles/Nregex.dir/src/match.cpp.o"
   "CMakeFiles/Nregex.dir/src/match.cpp.o.d"
-  "CMakeFiles/Nregex.dir/src/match_begin.cpp.o"
-  "CMakeFiles/Nregex.dir/src/match_begin.cpp.o.d"
-  "CMakeFiles/Nregex.dir/src/match_here.cpp.o"
-  "CMakeFiles/Nregex.dir/src/match_here.cpp.o.d"
+  "CMakeFiles/Nregex.dir/src/regex.cpp.o"
+  "CMakeFiles/Nregex.dir/src/regex.cpp.o.d"
+  "CMakeFiles/Nregex.dir/tests/nka.cpp.o"
+  "CMakeFiles/Nregex.dir/tests/nka.cpp.o.d"
   "Nregex"
   "Nregex.pdb"
 )
