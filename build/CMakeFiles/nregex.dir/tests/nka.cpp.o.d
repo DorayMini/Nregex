@@ -707,4 +707,10 @@ CMakeFiles/nregex.dir/tests/nka.cpp.o: \
   /data/data/com.termux/files/usr/include/c++/v1/cstdarg \
   /data/data/com.termux/files/home/Nregex/include/regex.hpp \
   /data/data/com.termux/files/home/Nregex/src/private/AST.hpp \
-  /data/data/com.termux/files/home/Nregex/src/private/parser.hpp
+  /data/data/com.termux/files/home/Nregex/src/private/NFA.hpp \
+  /data/data/com.termux/files/home/Nregex/src/private/states.hpp \
+  /data/data/com.termux/files/home/Nregex/src/private/parser.hpp \
+  /data/data/com.termux/files/home/Nregex/src/private/NFAEvaluator.hpp \
+  /data/data/com.termux/files/usr/include/c++/v1/set \
+  /data/data/com.termux/files/usr/include/c++/v1/__tree \
+  /data/data/com.termux/files/usr/include/c++/v1/unordered_set

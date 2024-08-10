@@ -153,6 +153,54 @@ src/AST.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/AST.cpp.s
 .PHONY : src/AST.cpp.s
 
+src/NFA.o: src/NFA.cpp.o
+.PHONY : src/NFA.o
+
+# target to build an object file
+src/NFA.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFA.cpp.o
+.PHONY : src/NFA.cpp.o
+
+src/NFA.i: src/NFA.cpp.i
+.PHONY : src/NFA.i
+
+# target to preprocess a source file
+src/NFA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFA.cpp.i
+.PHONY : src/NFA.cpp.i
+
+src/NFA.s: src/NFA.cpp.s
+.PHONY : src/NFA.s
+
+# target to generate assembly for a file
+src/NFA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFA.cpp.s
+.PHONY : src/NFA.cpp.s
+
+src/NFAEvulator.o: src/NFAEvulator.cpp.o
+.PHONY : src/NFAEvulator.o
+
+# target to build an object file
+src/NFAEvulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o
+.PHONY : src/NFAEvulator.cpp.o
+
+src/NFAEvulator.i: src/NFAEvulator.cpp.i
+.PHONY : src/NFAEvulator.i
+
+# target to preprocess a source file
+src/NFAEvulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFAEvulator.cpp.i
+.PHONY : src/NFAEvulator.cpp.i
+
+src/NFAEvulator.s: src/NFAEvulator.cpp.s
+.PHONY : src/NFAEvulator.s
+
+# target to generate assembly for a file
+src/NFAEvulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFAEvulator.cpp.s
+.PHONY : src/NFAEvulator.cpp.s
+
 src/match.o: src/match.cpp.o
 .PHONY : src/match.o
 
@@ -261,6 +309,12 @@ help:
 	@echo "... src/AST.o"
 	@echo "... src/AST.i"
 	@echo "... src/AST.s"
+	@echo "... src/NFA.o"
+	@echo "... src/NFA.i"
+	@echo "... src/NFA.s"
+	@echo "... src/NFAEvulator.o"
+	@echo "... src/NFAEvulator.i"
+	@echo "... src/NFAEvulator.s"
 	@echo "... src/match.o"
 	@echo "... src/match.i"
 	@echo "... src/match.s"

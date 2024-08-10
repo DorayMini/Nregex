@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/nregex.dir/src/AST.cpp.o"
   "CMakeFiles/nregex.dir/src/AST.cpp.o.d"
+  "CMakeFiles/nregex.dir/src/NFA.cpp.o"
+  "CMakeFiles/nregex.dir/src/NFA.cpp.o.d"
+  "CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o"
+  "CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o.d"
   "CMakeFiles/nregex.dir/src/match.cpp.o"
   "CMakeFiles/nregex.dir/src/match.cpp.o.d"
   "CMakeFiles/nregex.dir/src/parser.cpp.o"

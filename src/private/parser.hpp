@@ -12,19 +12,19 @@
         REPEAT = '*',
         OR = '|',
       };
-      class Parsers{};
 
-      class ParserAST: public Parsers{
+      class RegexParser{
       public:
-        ParserAST(const std::string& RegExpr);
-        auto parsing() -> RegexAST*;
+        RegexParser(const std::string& RegExpr);
+        ~RegexParser();
+        auto parsing() -> RegexExpr*;
       private:
         std::string regExpr;
-        RegexAST* leftNode;
-        RegexAST* rightNode;
+        RegexExpr* leftNode;
+        RegexExpr* rightNode;
         int pos = 0;
 
-        auto parseParentheses() -> RegexAST*;
+        auto parseParentheses() -> RegexExpr*;
       };
     }//namespace impl
   }//,namespace nregex

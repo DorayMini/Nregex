@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/data/data/com.termux/files/home/Nregex/src/AST.cpp" "CMakeFiles/nregex.dir/src/AST.cpp.o" "gcc" "CMakeFiles/nregex.dir/src/AST.cpp.o.d"
+  "/data/data/com.termux/files/home/Nregex/src/NFA.cpp" "CMakeFiles/nregex.dir/src/NFA.cpp.o" "gcc" "CMakeFiles/nregex.dir/src/NFA.cpp.o.d"
+  "/data/data/com.termux/files/home/Nregex/src/NFAEvulator.cpp" "CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o" "gcc" "CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o.d"
   "/data/data/com.termux/files/home/Nregex/src/match.cpp" "CMakeFiles/nregex.dir/src/match.cpp.o" "gcc" "CMakeFiles/nregex.dir/src/match.cpp.o.d"
   "/data/data/com.termux/files/home/Nregex/src/parser.cpp" "CMakeFiles/nregex.dir/src/parser.cpp.o" "gcc" "CMakeFiles/nregex.dir/src/parser.cpp.o.d"
   "/data/data/com.termux/files/home/Nregex/src/regex.cpp" "CMakeFiles/nregex.dir/src/regex.cpp.o" "gcc" "CMakeFiles/nregex.dir/src/regex.cpp.o.d"

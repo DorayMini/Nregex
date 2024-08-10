@@ -1,84 +1,67 @@
 #ifndef __AST__
 #define __AST__
-  namespace nregex{
-    namespace impl {
-      class RegexAST{
-      public:
-        virtual auto print() const -> void = 0;
-      };
 
-      class Literal: public RegexAST{
-      public:
-        Literal() = delete;
-        Literal(char C);
-        auto operator=(const Literal& lit) -> Literal&;
+#include <ostream>
+#include <memory>
 
-        auto getLiteral() const -> char;
-        auto print() const -> void final;
-      private:
-        char c;
-      };
 
-      class Or: public RegexAST{
-      public:
-        Or() = delete;
-        Or(const Or& objOr);
-        Or(RegexAST* Expr1, RegexAST* Expr2);
-        ~Or();
-        auto operator=(const Or& objOr) -> Or&;
+namespace nregex{
+  namespace impl {
+    struct RegexExpr{
+      virtual ~RegexExpr() {}
+    };
 
-        auto getExpr1() const -> RegexAST*;
-        auto getExpr2() const -> RegexAST*;
-        auto print() const -> void final;
-      private:
-        RegexAST* expr1;
-        RegexAST* expr2;
-      };
+    struct Literal: RegexExpr{
+      Literal() = delete;
+      Literal(char c_);
+      Literal& operator=(const Literal& lit);
 
-      class Concat: public RegexAST{
-      public:
-        Concat() = delete;
-        Concat(const Concat& concat);
-        Concat(RegexAST* First, RegexAST* Second);
-        ~Concat();
-        auto operator=(const Concat& concat) -> Concat&;
+      char c;
+    };
 
-        auto getFirst() const -> RegexAST*;
-        auto getSecond() const -> RegexAST*;
-        auto print() const -> void final;
-      private:
-        RegexAST* first;
-        RegexAST* second;
-      };
+    struct Or: RegexExpr{
+      Or() = delete;
+      Or(const Or& objOr);
+      Or(RegexExpr* left_, RegexExpr* right);
+      Or& operator=(const Or& objOr);
+      ~Or();
 
-      class Repeat: public RegexAST{
-      public:
-        Repeat() = delete;
-        Repeat(const Repeat& rep);
-        Repeat(RegexAST* Expr);
-        ~Repeat();
-        auto operator=(const Repeat& rep) -> Repeat&;
+      RegexExpr* left;
+      RegexExpr* right;
+    };
 
-        auto getExpr() const -> RegexAST*;
-        auto print() const -> void final;
-      private:
-        RegexAST* expr;
-      };
+    struct Concat: RegexExpr{
+      Concat() = delete;
+      Concat(const Concat& concat);
+      Concat(RegexExpr* first_, RegexExpr* second_);
+      Concat& operator=(const Concat& concat);
+      ~Concat();
 
-      class Plus: public RegexAST{
-      public:
-        Plus() = delete;
-        Plus(const Plus& plus);
-        Plus(RegexAST* Expr);
-        ~Plus();
-        auto operator=(const Plus& plus) -> Plus&;
+      RegexExpr* first;
+      RegexExpr* second;
+    };
 
-        auto getExpr() const -> RegexAST*;
-        auto print() const -> void final;
-      private:
-        RegexAST* expr;
-      };
-    }//namespace impl
-  }//namespace nregex
+    struct Repeat: RegexExpr{
+      Repeat() = delete;
+      Repeat(const Repeat& rep);
+      Repeat(RegexExpr* expr_);
+      Repeat& operator=(const Repeat& rep);
+      ~Repeat();
+
+      RegexExpr* expr;
+    };
+
+    struct Plus: RegexExpr{
+      Plus() = delete;
+      Plus(const Plus& plus);
+      Plus(RegexExpr* expr_);
+      Plus& operator=(const Plus& plus);
+      ~Plus();
+      
+      RegexExpr* expr;
+    };
+
+  }//namespace impl
+}//namespace nregex
 
 #endif // !__AST__
