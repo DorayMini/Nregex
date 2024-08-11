@@ -704,6 +704,4 @@ CMakeFiles/nregex.dir/src/parser.cpp.o: \
   /data/data/com.termux/files/usr/include/c++/v1/locale \
   /data/data/com.termux/files/usr/include/c++/v1/streambuf \
   /data/data/com.termux/files/usr/include/c++/v1/__bsd_locale_fallbacks.h \
-  /data/data/com.termux/files/usr/include/c++/v1/cstdarg \
-  /data/data/com.termux/files/usr/include/c++/v1/iostream \
-  /data/data/com.termux/files/usr/include/c++/v1/istream
+  /data/data/com.termux/files/usr/include/c++/v1/cstdarg

@@ -177,53 +177,29 @@ src/NFA.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFA.cpp.s
 .PHONY : src/NFA.cpp.s
 
-src/NFAEvulator.o: src/NFAEvulator.cpp.o
-.PHONY : src/NFAEvulator.o
+src/NFAEvaluator.o: src/NFAEvaluator.cpp.o
+.PHONY : src/NFAEvaluator.o
 
 # target to build an object file
-src/NFAEvulator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o
-.PHONY : src/NFAEvulator.cpp.o
+src/NFAEvaluator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o
+.PHONY : src/NFAEvaluator.cpp.o
 
-src/NFAEvulator.i: src/NFAEvulator.cpp.i
-.PHONY : src/NFAEvulator.i
-
-# target to preprocess a source file
-src/NFAEvulator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFAEvulator.cpp.i
-.PHONY : src/NFAEvulator.cpp.i
-
-src/NFAEvulator.s: src/NFAEvulator.cpp.s
-.PHONY : src/NFAEvulator.s
-
-# target to generate assembly for a file
-src/NFAEvulator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFAEvulator.cpp.s
-.PHONY : src/NFAEvulator.cpp.s
-
-src/match.o: src/match.cpp.o
-.PHONY : src/match.o
-
-# target to build an object file
-src/match.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/match.cpp.o
-.PHONY : src/match.cpp.o
-
-src/match.i: src/match.cpp.i
-.PHONY : src/match.i
+src/NFAEvaluator.i: src/NFAEvaluator.cpp.i
+.PHONY : src/NFAEvaluator.i
 
 # target to preprocess a source file
-src/match.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/match.cpp.i
-.PHONY : src/match.cpp.i
+src/NFAEvaluator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.i
+.PHONY : src/NFAEvaluator.cpp.i
 
-src/match.s: src/match.cpp.s
-.PHONY : src/match.s
+src/NFAEvaluator.s: src/NFAEvaluator.cpp.s
+.PHONY : src/NFAEvaluator.s
 
 # target to generate assembly for a file
-src/match.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/match.cpp.s
-.PHONY : src/match.cpp.s
+src/NFAEvaluator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.s
+.PHONY : src/NFAEvaluator.cpp.s
 
 src/parser.o: src/parser.cpp.o
 .PHONY : src/parser.o
@@ -273,29 +249,29 @@ src/regex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/regex.cpp.s
 .PHONY : src/regex.cpp.s
 
-tests/nka.o: tests/nka.cpp.o
-.PHONY : tests/nka.o
+src/states.o: src/states.cpp.o
+.PHONY : src/states.o
 
 # target to build an object file
-tests/nka.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/tests/nka.cpp.o
-.PHONY : tests/nka.cpp.o
+src/states.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/states.cpp.o
+.PHONY : src/states.cpp.o
 
-tests/nka.i: tests/nka.cpp.i
-.PHONY : tests/nka.i
+src/states.i: src/states.cpp.i
+.PHONY : src/states.i
 
 # target to preprocess a source file
-tests/nka.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/tests/nka.cpp.i
-.PHONY : tests/nka.cpp.i
+src/states.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/states.cpp.i
+.PHONY : src/states.cpp.i
 
-tests/nka.s: tests/nka.cpp.s
-.PHONY : tests/nka.s
+src/states.s: src/states.cpp.s
+.PHONY : src/states.s
 
 # target to generate assembly for a file
-tests/nka.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/tests/nka.cpp.s
-.PHONY : tests/nka.cpp.s
+src/states.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/src/states.cpp.s
+.PHONY : src/states.cpp.s
 
 # Help Target
 help:
@@ -312,21 +288,18 @@ help:
 	@echo "... src/NFA.o"
 	@echo "... src/NFA.i"
 	@echo "... src/NFA.s"
-	@echo "... src/NFAEvulator.o"
-	@echo "... src/NFAEvulator.i"
-	@echo "... src/NFAEvulator.s"
-	@echo "... src/match.o"
-	@echo "... src/match.i"
-	@echo "... src/match.s"
+	@echo "... src/NFAEvaluator.o"
+	@echo "... src/NFAEvaluator.i"
+	@echo "... src/NFAEvaluator.s"
 	@echo "... src/parser.o"
 	@echo "... src/parser.i"
 	@echo "... src/parser.s"
 	@echo "... src/regex.o"
 	@echo "... src/regex.i"
 	@echo "... src/regex.s"
-	@echo "... tests/nka.o"
-	@echo "... tests/nka.i"
-	@echo "... tests/nka.s"
+	@echo "... src/states.o"
+	@echo "... src/states.i"
+	@echo "... src/states.s"
 .PHONY : help
 
 

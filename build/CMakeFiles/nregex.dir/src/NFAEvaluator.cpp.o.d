@@ -1,5 +1,5 @@
-CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o: \
-  /data/data/com.termux/files/home/Nregex/src/NFAEvulator.cpp \
+CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o: \
+  /data/data/com.termux/files/home/Nregex/src/NFAEvaluator.cpp \
   /data/data/com.termux/files/home/Nregex/src/private/NFAEvaluator.hpp \
   /data/data/com.termux/files/usr/include/c++/v1/set \
   /data/data/com.termux/files/usr/include/c++/v1/__algorithm/equal.h \

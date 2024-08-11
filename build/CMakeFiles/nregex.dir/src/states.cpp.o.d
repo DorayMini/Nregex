@@ -1,5 +1,6 @@
-CMakeFiles/Nregex.dir/tests/nka.cpp.o: \
-  /data/data/com.termux/files/home/Nregex/tests/nka.cpp \
+CMakeFiles/nregex.dir/src/states.cpp.o: \
+  /data/data/com.termux/files/home/Nregex/src/states.cpp \
+  /data/data/com.termux/files/home/Nregex/src/private/states.hpp \
   /data/data/com.termux/files/usr/include/c++/v1/iostream \
   /data/data/com.termux/files/usr/include/c++/v1/__assert \
   /data/data/com.termux/files/usr/include/c++/v1/__config \
@@ -704,6 +705,4 @@ CMakeFiles/Nregex.dir/tests/nka.cpp.o: \
   /data/data/com.termux/files/usr/include/c++/v1/locale \
   /data/data/com.termux/files/usr/include/c++/v1/streambuf \
   /data/data/com.termux/files/usr/include/c++/v1/__bsd_locale_fallbacks.h \
-  /data/data/com.termux/files/usr/include/c++/v1/cstdarg \
-  /data/data/com.termux/files/home/Nregex/include/regex.hpp \
-  /data/data/com.termux/files/home/Nregex/src/private/graph_node.hpp
+  /data/data/com.termux/files/usr/include/c++/v1/cstdarg

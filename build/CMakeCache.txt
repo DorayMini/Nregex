@@ -28,7 +28,7 @@ CMAKE_BUILD_TYPE:STRING=RelWithDebInfo
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=/data/data/com.termux/files/usr/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/data/data/com.termux/files/usr/bin/c++
 
 //LLVM archiver
 CMAKE_CXX_COMPILER_AR:FILEPATH=/data/data/com.termux/files/usr/bin/llvm-ar
@@ -55,7 +55,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/data/data/com.termux/files/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/data/data/com.termux/files/usr/bin/cc
 
 //LLVM archiver
 CMAKE_C_COMPILER_AR:FILEPATH=/data/data/com.termux/files/usr/bin/llvm-ar
@@ -216,15 +216,6 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
-
-//Value Computed by CMake
-Nregex_BINARY_DIR:STATIC=/data/data/com.termux/files/home/Nregex/build
-
-//Value Computed by CMake
-Nregex_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Nregex_SOURCE_DIR:STATIC=/data/data/com.termux/files/home/Nregex
 
 //Value Computed by CMake
 nregex_BINARY_DIR:STATIC=/data/data/com.termux/files/home/Nregex/build

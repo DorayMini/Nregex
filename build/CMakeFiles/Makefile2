@@ -81,12 +81,12 @@ clean: CMakeFiles/nregex.dir/clean
 CMakeFiles/nregex.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nregex.dir/build.make CMakeFiles/nregex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target nregex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target nregex"
 .PHONY : CMakeFiles/nregex.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nregex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/Nregex/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/Nregex/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nregex.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/Nregex/build/CMakeFiles 0
 .PHONY : CMakeFiles/nregex.dir/rule

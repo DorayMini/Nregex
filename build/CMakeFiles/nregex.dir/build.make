@@ -97,38 +97,24 @@ CMakeFiles/nregex.dir/src/NFA.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nregex.dir/src/NFA.cpp.s"
 	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Nregex/src/NFA.cpp -o CMakeFiles/nregex.dir/src/NFA.cpp.s
 
-CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o: CMakeFiles/nregex.dir/flags.make
-CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o: /data/data/com.termux/files/home/Nregex/src/NFAEvulator.cpp
-CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o: CMakeFiles/nregex.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o -MF CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o.d -o CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o -c /data/data/com.termux/files/home/Nregex/src/NFAEvulator.cpp
+CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o: CMakeFiles/nregex.dir/flags.make
+CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o: /data/data/com.termux/files/home/Nregex/src/NFAEvaluator.cpp
+CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o: CMakeFiles/nregex.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o"
+	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o -MF CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o.d -o CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o -c /data/data/com.termux/files/home/Nregex/src/NFAEvaluator.cpp
 
-CMakeFiles/nregex.dir/src/NFAEvulator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nregex.dir/src/NFAEvulator.cpp.i"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Nregex/src/NFAEvulator.cpp > CMakeFiles/nregex.dir/src/NFAEvulator.cpp.i
+CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.i"
+	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Nregex/src/NFAEvaluator.cpp > CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.i
 
-CMakeFiles/nregex.dir/src/NFAEvulator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nregex.dir/src/NFAEvulator.cpp.s"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Nregex/src/NFAEvulator.cpp -o CMakeFiles/nregex.dir/src/NFAEvulator.cpp.s
-
-CMakeFiles/nregex.dir/src/match.cpp.o: CMakeFiles/nregex.dir/flags.make
-CMakeFiles/nregex.dir/src/match.cpp.o: /data/data/com.termux/files/home/Nregex/src/match.cpp
-CMakeFiles/nregex.dir/src/match.cpp.o: CMakeFiles/nregex.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nregex.dir/src/match.cpp.o"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nregex.dir/src/match.cpp.o -MF CMakeFiles/nregex.dir/src/match.cpp.o.d -o CMakeFiles/nregex.dir/src/match.cpp.o -c /data/data/com.termux/files/home/Nregex/src/match.cpp
-
-CMakeFiles/nregex.dir/src/match.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nregex.dir/src/match.cpp.i"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Nregex/src/match.cpp > CMakeFiles/nregex.dir/src/match.cpp.i
-
-CMakeFiles/nregex.dir/src/match.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nregex.dir/src/match.cpp.s"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Nregex/src/match.cpp -o CMakeFiles/nregex.dir/src/match.cpp.s
+CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.s"
+	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Nregex/src/NFAEvaluator.cpp -o CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.s
 
 CMakeFiles/nregex.dir/src/parser.cpp.o: CMakeFiles/nregex.dir/flags.make
 CMakeFiles/nregex.dir/src/parser.cpp.o: /data/data/com.termux/files/home/Nregex/src/parser.cpp
 CMakeFiles/nregex.dir/src/parser.cpp.o: CMakeFiles/nregex.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nregex.dir/src/parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nregex.dir/src/parser.cpp.o"
 	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nregex.dir/src/parser.cpp.o -MF CMakeFiles/nregex.dir/src/parser.cpp.o.d -o CMakeFiles/nregex.dir/src/parser.cpp.o -c /data/data/com.termux/files/home/Nregex/src/parser.cpp
 
 CMakeFiles/nregex.dir/src/parser.cpp.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/nregex.dir/src/parser.cpp.s: cmake_force
 CMakeFiles/nregex.dir/src/regex.cpp.o: CMakeFiles/nregex.dir/flags.make
 CMakeFiles/nregex.dir/src/regex.cpp.o: /data/data/com.termux/files/home/Nregex/src/regex.cpp
 CMakeFiles/nregex.dir/src/regex.cpp.o: CMakeFiles/nregex.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nregex.dir/src/regex.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nregex.dir/src/regex.cpp.o"
 	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nregex.dir/src/regex.cpp.o -MF CMakeFiles/nregex.dir/src/regex.cpp.o.d -o CMakeFiles/nregex.dir/src/regex.cpp.o -c /data/data/com.termux/files/home/Nregex/src/regex.cpp
 
 CMakeFiles/nregex.dir/src/regex.cpp.i: cmake_force
@@ -153,47 +139,46 @@ CMakeFiles/nregex.dir/src/regex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nregex.dir/src/regex.cpp.s"
 	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Nregex/src/regex.cpp -o CMakeFiles/nregex.dir/src/regex.cpp.s
 
-CMakeFiles/nregex.dir/tests/nka.cpp.o: CMakeFiles/nregex.dir/flags.make
-CMakeFiles/nregex.dir/tests/nka.cpp.o: /data/data/com.termux/files/home/Nregex/tests/nka.cpp
-CMakeFiles/nregex.dir/tests/nka.cpp.o: CMakeFiles/nregex.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nregex.dir/tests/nka.cpp.o"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nregex.dir/tests/nka.cpp.o -MF CMakeFiles/nregex.dir/tests/nka.cpp.o.d -o CMakeFiles/nregex.dir/tests/nka.cpp.o -c /data/data/com.termux/files/home/Nregex/tests/nka.cpp
+CMakeFiles/nregex.dir/src/states.cpp.o: CMakeFiles/nregex.dir/flags.make
+CMakeFiles/nregex.dir/src/states.cpp.o: /data/data/com.termux/files/home/Nregex/src/states.cpp
+CMakeFiles/nregex.dir/src/states.cpp.o: CMakeFiles/nregex.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nregex.dir/src/states.cpp.o"
+	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nregex.dir/src/states.cpp.o -MF CMakeFiles/nregex.dir/src/states.cpp.o.d -o CMakeFiles/nregex.dir/src/states.cpp.o -c /data/data/com.termux/files/home/Nregex/src/states.cpp
 
-CMakeFiles/nregex.dir/tests/nka.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nregex.dir/tests/nka.cpp.i"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Nregex/tests/nka.cpp > CMakeFiles/nregex.dir/tests/nka.cpp.i
+CMakeFiles/nregex.dir/src/states.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nregex.dir/src/states.cpp.i"
+	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Nregex/src/states.cpp > CMakeFiles/nregex.dir/src/states.cpp.i
 
-CMakeFiles/nregex.dir/tests/nka.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nregex.dir/tests/nka.cpp.s"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Nregex/tests/nka.cpp -o CMakeFiles/nregex.dir/tests/nka.cpp.s
+CMakeFiles/nregex.dir/src/states.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nregex.dir/src/states.cpp.s"
+	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Nregex/src/states.cpp -o CMakeFiles/nregex.dir/src/states.cpp.s
 
 # Object files for target nregex
 nregex_OBJECTS = \
 "CMakeFiles/nregex.dir/src/AST.cpp.o" \
 "CMakeFiles/nregex.dir/src/NFA.cpp.o" \
-"CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o" \
-"CMakeFiles/nregex.dir/src/match.cpp.o" \
+"CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o" \
 "CMakeFiles/nregex.dir/src/parser.cpp.o" \
 "CMakeFiles/nregex.dir/src/regex.cpp.o" \
-"CMakeFiles/nregex.dir/tests/nka.cpp.o"
+"CMakeFiles/nregex.dir/src/states.cpp.o"
 
 # External object files for target nregex
 nregex_EXTERNAL_OBJECTS =
 
-nregex: CMakeFiles/nregex.dir/src/AST.cpp.o
-nregex: CMakeFiles/nregex.dir/src/NFA.cpp.o
-nregex: CMakeFiles/nregex.dir/src/NFAEvulator.cpp.o
-nregex: CMakeFiles/nregex.dir/src/match.cpp.o
-nregex: CMakeFiles/nregex.dir/src/parser.cpp.o
-nregex: CMakeFiles/nregex.dir/src/regex.cpp.o
-nregex: CMakeFiles/nregex.dir/tests/nka.cpp.o
-nregex: CMakeFiles/nregex.dir/build.make
-nregex: CMakeFiles/nregex.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable nregex"
+libnregex.a: CMakeFiles/nregex.dir/src/AST.cpp.o
+libnregex.a: CMakeFiles/nregex.dir/src/NFA.cpp.o
+libnregex.a: CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o
+libnregex.a: CMakeFiles/nregex.dir/src/parser.cpp.o
+libnregex.a: CMakeFiles/nregex.dir/src/regex.cpp.o
+libnregex.a: CMakeFiles/nregex.dir/src/states.cpp.o
+libnregex.a: CMakeFiles/nregex.dir/build.make
+libnregex.a: CMakeFiles/nregex.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/data/data/com.termux/files/home/Nregex/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libnregex.a"
+	$(CMAKE_COMMAND) -P CMakeFiles/nregex.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nregex.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/nregex.dir/build: nregex
+CMakeFiles/nregex.dir/build: libnregex.a
 .PHONY : CMakeFiles/nregex.dir/build
 
 CMakeFiles/nregex.dir/clean:
