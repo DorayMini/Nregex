@@ -11,8 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/nregex.dir/src/regex.cpp.o.d"
   "CMakeFiles/nregex.dir/src/states.cpp.o"
   "CMakeFiles/nregex.dir/src/states.cpp.o.d"
-  "libnregex.a"
   "libnregex.pdb"
+  "libnregex.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,2 +1,1 @@
-/data/data/com.termux/files/usr/bin/llvm-ar qc libnregex.a CMakeFiles/nregex.dir/src/AST.cpp.o CMakeFiles/nregex.dir/src/NFA.cpp.o CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o CMakeFiles/nregex.dir/src/parser.cpp.o CMakeFiles/nregex.dir/src/regex.cpp.o CMakeFiles/nregex.dir/src/states.cpp.o
-/data/data/com.termux/files/usr/bin/llvm-ranlib libnregex.a
+/data/data/com.termux/files/usr/bin/c++ -fPIC  -std=c++20 -Wall -O2 -g -DNDEBUG -shared -Wl,-soname,libnregex.so -o libnregex.so CMakeFiles/nregex.dir/src/AST.cpp.o CMakeFiles/nregex.dir/src/NFA.cpp.o CMakeFiles/nregex.dir/src/NFAEvaluator.cpp.o CMakeFiles/nregex.dir/src/parser.cpp.o CMakeFiles/nregex.dir/src/regex.cpp.o CMakeFiles/nregex.dir/src/states.cpp.o

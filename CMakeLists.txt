@@ -11,4 +11,6 @@ file(GLOB
 include_directories("${PROJECT_SOURCE_DIR}/include")
 include_directories("${PROJECT_SOURCE_DIR}/src/private")
 
-add_executable(${PROJECT_NAME} ${CPP_SOURCES} "tests/nka.cpp")
+add_library(${PROJECT_NAME} SHARED
+  ${CPP_SOURCES}
+)

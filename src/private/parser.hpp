@@ -24,7 +24,8 @@
         RegexExpr* rightNode;
         int pos = 0;
 
-        auto parseParentheses() -> RegexExpr*;
+        RegexExpr* parseParentheses();
+        void addParentheses();
       };
     }//namespace impl
   }//,namespace nregex

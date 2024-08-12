@@ -1,11 +1,18 @@
 #include "parser.hpp"
-#include <iostream>
+
 nregex::impl::RegexParser::RegexParser(const std::string& RegExpr)
   : regExpr(RegExpr)
 {
+  addParentheses();
 }
 
-auto nregex::impl::RegexParser::parseParentheses() -> RegexExpr*{
+void nregex::impl::RegexParser::addParentheses()
+{
+  std::string l_par = "(";
+  regExpr = l_par.append(regExpr).append(")");
+}
+
+nregex::impl::RegexExpr* nregex::impl::RegexParser::parseParentheses(){
   if (this->pos < regExpr.size()) {
     if (regExpr.at(this->pos) == SPECIAL_CHARS::L_PAR) {
       if(leftNode == nullptr || regExpr.at(this->pos-1) == SPECIAL_CHARS::OR){

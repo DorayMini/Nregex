@@ -4,35 +4,29 @@ nregex::impl::NFA::NFA(RegexExpr* regex) : regex_(regex), nfa_{RegexToNFA(regex_
 {}
 
 nregex::impl::State* nregex::impl::NFA::RegexToNFA(RegexExpr* regex, State* andThen){
-  const std::type_info& regex_type = typeid(*regex);
-  if(typeid(Literal) == regex_type)
+  if(auto literal = dynamic_cast<Literal*>(regex))
   {
-    char literalExpr = dynamic_cast<Literal*>(regex)->c;
-    return new Consume(literalExpr, andThen);
+    return new Consume(literal->c, andThen);
   }
-  else if (typeid(Concat) == regex_type)
+  else if (auto concat = dynamic_cast<Concat*>(regex))
   {
-    Concat* concat = dynamic_cast<Concat*>(regex);
     return RegexToNFA(concat->first, RegexToNFA(concat->second, andThen));
   }
-  else if(typeid(Or) == regex_type)
+  else if(auto or_ = dynamic_cast<Or*>(regex))
   {
-    Or* or_ = dynamic_cast<Or*>(regex);
     return new Split(RegexToNFA(or_->left, andThen), RegexToNFA(or_->right, andThen));
   }
-  else if(typeid(Repeat) == regex_type)
+  else if(auto repeat = dynamic_cast<Repeat*>(regex))
   {
-    RegexExpr* repeatExpr = dynamic_cast<Repeat*>(regex)->expr;
     auto placeholder = new Placeholder(nullptr);
-    auto split = new Split(RegexToNFA(repeatExpr, placeholder), andThen);
-    placeholder->pointingTo_ = split;
+    auto split = new Split(RegexToNFA(repeat->expr, placeholder), andThen);
+    placeholder->pointingTo = split;
     return placeholder;
   }
-  else if(typeid(Plus) == regex_type)
+  else if(auto plus = dynamic_cast<Plus*>(regex))
   {
-    RegexExpr* plusExpr = dynamic_cast<Plus*>(regex)->expr;
-    return RegexToNFA(new Concat(plusExpr, new Repeat(plusExpr)), andThen);
-  }
+    return RegexToNFA(new Concat(plus->expr, new Repeat(plus->expr)), andThen);
+  } 
 }
 
 nregex::impl::State* nregex::impl::NFA::get() {return nfa_;}

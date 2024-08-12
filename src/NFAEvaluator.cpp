@@ -37,14 +37,14 @@ std::set<nregex::impl::State*> nregex::impl::NFAEvaluator::evaluateState(std::op
   else {
     visitedStates.insert(currentState);
     if (auto placeholder = dynamic_cast<Placeholder*>(currentState)) {
-      return evaluateState(input, placeholder->pointingTo_, visitedStates);
+      return evaluateState(input, placeholder->pointingTo, visitedStates);
     } else if (auto consume = dynamic_cast<Consume*>(currentState)) {
-      if(consume->c_ == input) 
-        return {consume->out_};
+      if(consume->c == input || consume->c == '.') 
+        return {consume->out};
       return {};
     } else if (auto split = dynamic_cast<Split*>(currentState)) {
-      auto state1 = evaluateState(input, split->out1_, visitedStates);
-      auto state2 = evaluateState(input, split->out2_, visitedStates);
+      auto state1 = evaluateState(input, split->out1, visitedStates);
+      auto state2 = evaluateState(input, split->out2, visitedStates);
       state1.insert(std::begin(state2), std::end(state2));
       return state1;
     } else if (auto match = dynamic_cast<Match*>(currentState)) {

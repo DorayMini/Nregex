@@ -2,19 +2,24 @@
 #include <iostream>
 
 
-nregex::regex::regex(const std::string& reg, const std::string& input)
-{
-  impl::NFAEvaluator nfa(input, (new impl::NFA((new impl::RegexParser(reg))->parsing()))->get());
-  if(nfa.eval())
-    std::cout << "true\n";
-  else std::cout << "false\n";
+nregex::regex::regex(const std::string& pattern)
+  : pattern_{pattern}
+{}
 
-}
+nregex::regex::regex(const std::string&& pattern) noexcept
+  : pattern_{pattern}
+{}
 
-nregex::regex::regex(std::string&& reg, std::string&& input)
+bool nregex::regex::match(const std::string& input, Parameters param)
 {
-  impl::NFAEvaluator nfa(input, (new impl::NFA((new impl::RegexParser(reg))->parsing()))->get());
-  if(nfa.eval())
-    std::cout << "true\n";
-  else std::cout << "false\n";
+  impl::RegexParser* reg;
+  if(param == FULL)
+    reg = new impl::RegexParser(pattern_);
+  else {
+    std::string newPattern = ".*";
+    reg = new impl::RegexParser(newPattern.append(pattern_).append(".*"));
+  }
+  impl::NFA* nfa = new impl::NFA(reg->parsing());
+  impl::NFAEvaluator* nfaEval = new impl::NFAEvaluator(input, nfa->get());
+  return nfaEval->eval();
 }
